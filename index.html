@@ -4,19 +4,532 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>دعوة زفاف محمد وسارة</title>
-    <link rel="icon" type="image/png" href="شعار%20زفّة%20الفاخر%20بالحلقات%20والماسة.png" />
-    <link rel="apple-touch-icon" href="شعار%20زفّة%20الفاخر%20بالحلقات%20والماسة.png" />
+    <meta
+      name="description"
+      content="دعوة زفاف محمد وسارة – الخميس 29 أكتوبر 2026، قاعة الروز – غزة"
+    />
+    <link rel="icon" type="image/png" sizes="64x64" href="images/icon-64.png" />
+    <link rel="apple-touch-icon" href="images/icon-180.png" />
+    <!-- تحميل مبكر لما يظهر أولاً على الشاشة -->
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Marhey:wght@400;600;700&family=Amiri:wght@400;700&family=Reem+Kufi+Ink&family=Reem+Kufi:wght@600&family=Almarai:wght@300;400;700;800&display=swap"
+      rel="preload"
+      as="image"
+      href="images/bg.webp"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="fonts/reemkufiink-v11-oPWJ_kJmmu8hCvB9iFumxZSndjxXQ0SXnkk.woff2"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="fonts/almarai-v19-tsstApxBaigK_hnnQ1iFo0C3.woff2"
+      type="font/woff2"
+      crossorigin
     />
     <style>
+      /* arabic */
+      @font-face {
+        font-family: "Almarai";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(fonts/almarai-v19-tssoApxBaigK_hnnS_antnqWo572.woff2)
+          format("woff2");
+        unicode-range:
+          U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF,
+          U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74,
+          U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7,
+          U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F,
+          U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37,
+          U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F,
+          U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F,
+          U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77,
+          U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3,
+          U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+      } /* latin */
+      @font-face {
+        font-family: "Almarai";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(fonts/almarai-v19-tssoApxBaigK_hnnS_antn-Wow.woff2)
+          format("woff2");
+        unicode-range:
+          U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      } /* arabic */
+      @font-face {
+        font-family: "Almarai";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(fonts/almarai-v19-tsstApxBaigK_hnnQ1iFo0C3.woff2)
+          format("woff2");
+        unicode-range:
+          U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF,
+          U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74,
+          U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7,
+          U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F,
+          U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37,
+          U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F,
+          U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F,
+          U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77,
+          U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3,
+          U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+      } /* latin */
+      @font-face {
+        font-family: "Almarai";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(fonts/almarai-v19-tsstApxBaigK_hnnQ12Fow.woff2) format("woff2");
+        unicode-range:
+          U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      } /* arabic */
+      @font-face {
+        font-family: "Almarai";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(fonts/almarai-v19-tssoApxBaigK_hnnS-agtnqWo572.woff2)
+          format("woff2");
+        unicode-range:
+          U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF,
+          U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74,
+          U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7,
+          U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F,
+          U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37,
+          U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F,
+          U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F,
+          U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77,
+          U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3,
+          U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+      } /* latin */
+      @font-face {
+        font-family: "Almarai";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(fonts/almarai-v19-tssoApxBaigK_hnnS-agtn-Wow.woff2)
+          format("woff2");
+        unicode-range:
+          U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      } /* arabic */
+      @font-face {
+        font-family: "Almarai";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(fonts/almarai-v19-tssoApxBaigK_hnnS_qjtnqWo572.woff2)
+          format("woff2");
+        unicode-range:
+          U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF,
+          U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74,
+          U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7,
+          U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F,
+          U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37,
+          U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F,
+          U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F,
+          U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77,
+          U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3,
+          U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+      } /* latin */
+      @font-face {
+        font-family: "Almarai";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(fonts/almarai-v19-tssoApxBaigK_hnnS_qjtn-Wow.woff2)
+          format("woff2");
+        unicode-range:
+          U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      } /* arabic */
+      @font-face {
+        font-family: "Amiri";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(fonts/amiri-v30-J7aRnpd8CGxBHpUrtLMA7w.woff2) format("woff2");
+        unicode-range:
+          U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF,
+          U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74,
+          U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7,
+          U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F,
+          U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37,
+          U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F,
+          U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F,
+          U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77,
+          U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3,
+          U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+      } /* latin-ext */
+      @font-face {
+        font-family: "Amiri";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(fonts/amiri-v30-J7aRnpd8CGxBHpUgtLMA7w.woff2) format("woff2");
+        unicode-range:
+          U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+          U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+          U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      } /* latin */
+      @font-face {
+        font-family: "Amiri";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(fonts/amiri-v30-J7aRnpd8CGxBHpUutLM.woff2) format("woff2");
+        unicode-range:
+          U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      } /* arabic */
+      @font-face {
+        font-family: "Amiri";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(fonts/amiri-v30-J7acnpd8CGxBHp2VkaY6zp5yGw.woff2)
+          format("woff2");
+        unicode-range:
+          U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF,
+          U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74,
+          U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7,
+          U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F,
+          U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37,
+          U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F,
+          U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F,
+          U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77,
+          U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3,
+          U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+      } /* latin-ext */
+      @font-face {
+        font-family: "Amiri";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(fonts/amiri-v30-J7acnpd8CGxBHp2VkaYxzp5yGw.woff2)
+          format("woff2");
+        unicode-range:
+          U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+          U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+          U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      } /* latin */
+      @font-face {
+        font-family: "Amiri";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(fonts/amiri-v30-J7acnpd8CGxBHp2VkaY_zp4.woff2) format("woff2");
+        unicode-range:
+          U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      } /* arabic */
+      @font-face {
+        font-family: "Marhey";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(fonts/marhey-v8-x3dhck7Laq-T7wlRk48kRNs.woff2) format("woff2");
+        unicode-range:
+          U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF,
+          U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74,
+          U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7,
+          U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F,
+          U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37,
+          U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F,
+          U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F,
+          U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77,
+          U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3,
+          U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+      } /* latin-ext */
+      @font-face {
+        font-family: "Marhey";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(fonts/marhey-v8-x3dhck7Laq-T7wlRmI8kRNs.woff2) format("woff2");
+        unicode-range:
+          U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+          U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+          U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      } /* latin */
+      @font-face {
+        font-family: "Marhey";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(fonts/marhey-v8-x3dhck7Laq-T7wlRlo8k.woff2) format("woff2");
+        unicode-range:
+          U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      } /* arabic */
+      @font-face {
+        font-family: "Marhey";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(fonts/marhey-v8-x3dhck7Laq-T7wlRk48kRNs.woff2) format("woff2");
+        unicode-range:
+          U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF,
+          U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74,
+          U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7,
+          U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F,
+          U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37,
+          U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F,
+          U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F,
+          U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77,
+          U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3,
+          U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+      } /* latin-ext */
+      @font-face {
+        font-family: "Marhey";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(fonts/marhey-v8-x3dhck7Laq-T7wlRmI8kRNs.woff2) format("woff2");
+        unicode-range:
+          U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+          U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+          U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      } /* latin */
+      @font-face {
+        font-family: "Marhey";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(fonts/marhey-v8-x3dhck7Laq-T7wlRlo8k.woff2) format("woff2");
+        unicode-range:
+          U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      } /* arabic */
+      @font-face {
+        font-family: "Marhey";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(fonts/marhey-v8-x3dhck7Laq-T7wlRk48kRNs.woff2) format("woff2");
+        unicode-range:
+          U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF,
+          U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74,
+          U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7,
+          U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F,
+          U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37,
+          U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F,
+          U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F,
+          U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77,
+          U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3,
+          U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+      } /* latin-ext */
+      @font-face {
+        font-family: "Marhey";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(fonts/marhey-v8-x3dhck7Laq-T7wlRmI8kRNs.woff2) format("woff2");
+        unicode-range:
+          U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+          U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+          U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      } /* latin */
+      @font-face {
+        font-family: "Marhey";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(fonts/marhey-v8-x3dhck7Laq-T7wlRlo8k.woff2) format("woff2");
+        unicode-range:
+          U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      } /* arabic */
+      @font-face {
+        font-family: "Reem Kufi";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(fonts/reemkufi-v28-2sDPZGJLip7W2J7v7wQZZE1I0yCmYzzQtjhgIGOV35Gu.woff2)
+          format("woff2");
+        unicode-range:
+          U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF,
+          U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74,
+          U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7,
+          U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F,
+          U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37,
+          U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F,
+          U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F,
+          U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77,
+          U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3,
+          U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+      } /* vietnamese */
+      @font-face {
+        font-family: "Reem Kufi";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(fonts/reemkufi-v28-2sDPZGJLip7W2J7v7wQZZE1I0yCmYzzQtjhgIGmV35Gu.woff2)
+          format("woff2");
+        unicode-range:
+          U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+          U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+          U+1EA0-1EF9, U+20AB;
+      } /* latin-ext */
+      @font-face {
+        font-family: "Reem Kufi";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(fonts/reemkufi-v28-2sDPZGJLip7W2J7v7wQZZE1I0yCmYzzQtjhgIGiV35Gu.woff2)
+          format("woff2");
+        unicode-range:
+          U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+          U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+          U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      } /* latin */
+      @font-face {
+        font-family: "Reem Kufi";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(fonts/reemkufi-v28-2sDPZGJLip7W2J7v7wQZZE1I0yCmYzzQtjhgIGaV3w.woff2)
+          format("woff2");
+        unicode-range:
+          U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      } /* arabic */
+      @font-face {
+        font-family: "Reem Kufi Ink";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(fonts/reemkufiink-v11-oPWJ_kJmmu8hCvB9iFumxZSndjxXQ0SXnkk.woff2)
+          format("woff2");
+        unicode-range:
+          U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF,
+          U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74,
+          U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7,
+          U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F,
+          U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37,
+          U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F,
+          U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F,
+          U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77,
+          U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3,
+          U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+      } /* vietnamese */
+      @font-face {
+        font-family: "Reem Kufi Ink";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(fonts/reemkufiink-v11-oPWJ_kJmmu8hCvB9iFumxZSndjZXQ0SXnkk.woff2)
+          format("woff2");
+        unicode-range:
+          U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+          U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+          U+1EA0-1EF9, U+20AB;
+      } /* latin-ext */
+      @font-face {
+        font-family: "Reem Kufi Ink";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(fonts/reemkufiink-v11-oPWJ_kJmmu8hCvB9iFumxZSndjdXQ0SXnkk.woff2)
+          format("woff2");
+        unicode-range:
+          U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+          U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+          U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      } /* latin */
+      @font-face {
+        font-family: "Reem Kufi Ink";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(fonts/reemkufiink-v11-oPWJ_kJmmu8hCvB9iFumxZSndjlXQyyU.woff2)
+          format("woff2");
+        unicode-range:
+          U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      body {
+        --google-font-color-reemkufiink: colrv1;
+      }
+    </style>
+    <style>
+      /* نظام الألوان والحركة الموحّد لكل الصفحة (البطاقة، القائمة الجانبية، النوافذ) */
+      :root {
+        --rose: #c2496b;
+        --gold: #c9a24b;
+        --rose-50: color-mix(in oklch, var(--rose) 7%, white);
+        --rose-100: color-mix(in oklch, var(--rose) 16%, white);
+        --rose-150: color-mix(in oklch, var(--rose) 26%, white);
+        --rose-200: color-mix(in oklch, var(--rose) 38%, white);
+        --rose-300: color-mix(in oklch, var(--rose) 58%, white);
+        --rose-600: color-mix(in oklch, var(--rose) 100%, black 10%);
+        --rose-700: color-mix(in oklch, var(--rose) 100%, black 24%);
+        --rose-900: color-mix(in oklch, var(--rose) 100%, black 46%);
+        --gold-100: color-mix(in oklch, var(--gold) 22%, white);
+        --gold-300: color-mix(in oklch, var(--gold) 55%, white);
+        --gold-600: color-mix(in oklch, var(--gold) 100%, black 12%);
+        --gold-700: color-mix(in oklch, var(--gold) 100%, black 28%);
+        --shadow-rose: color-mix(in oklch, var(--rose) 35%, transparent);
+        /* درجات النص */
+        --ink: #3a2530;
+        --ink-2: #5c4550;
+        --ink-3: #8a6570;
+        /* منحنى الحركة الموحّد */
+        --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+      }
       * {
         box-sizing: border-box;
         -webkit-tap-highlight-color: transparent;
       }
       html {
         scroll-behavior: smooth;
+      }
+      /* سكرول نحيف بألوان الدعوة (فايرفوكس فقط، حتى لا يلغي تنسيق كروم) */
+      @supports not selector(::-webkit-scrollbar) {
+        html {
+          scrollbar-width: thin;
+          scrollbar-color: var(--rose-300) var(--rose-50);
+        }
+      }
+      /* سكرول الصفحة (كروم/إيدج/سفاري) */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--rose-50);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, var(--rose-300), var(--rose-600));
+        border-radius: 999px;
+        border: 2px solid var(--rose-50);
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg, var(--gold-300), var(--gold-600));
+      }
+      ::-webkit-scrollbar-corner {
+        background: transparent;
       }
       html,
       body {
@@ -30,8 +543,10 @@
         justify-content: center;
         min-height: 100vh;
       }
-      /* خلفية الصفحة: نفس صورة الهيرو، ثابتة خلف البطاقة */
+      /* خلفية الصفحة: نفس صورة الهيرو، ثابتة خلف البطاقة
+         (على الجوال البطاقة تغطي الشاشة كلها، فلا داعي لرسم طبقة مموّهة مكلفة) */
       body::before {
+        display: none;
         content: "";
         position: fixed;
         inset: 0;
@@ -42,7 +557,7 @@
             rgba(246, 233, 236, 0.35),
             rgba(239, 224, 228, 0.55)
           ),
-          url("https://images.pexels.com/photos/3608751/pexels-photo-3608751.jpeg?auto=compress&cs=tinysrgb&w=1920");
+          url("images/bg.webp");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -53,23 +568,31 @@
         body {
           padding: 28px 16px;
         }
+        body::before {
+          display: block;
+        }
       }
       a {
-        color: #8a2f47;
+        color: var(--rose-700);
         text-decoration: none;
       }
       a:hover {
-        color: #5c1f30;
+        color: var(--rose-900);
       }
       button,
       a,
       input,
       textarea {
-        transition: all 0.2s ease;
+        transition:
+          color 0.2s ease,
+          background-color 0.2s ease,
+          border-color 0.2s ease,
+          box-shadow 0.2s ease,
+          transform 0.2s ease;
       }
       button:focus-visible,
       a:focus-visible {
-        outline: 2px solid var(--gold-600, #b8923a);
+        outline: 2px solid var(--gold-600);
         outline-offset: 3px;
         border-radius: 4px;
       }
@@ -87,29 +610,13 @@
       }
 
       #invite {
-        --rose: #c2496b;
-        --gold: #c9a24b;
-        --rose-50: color-mix(in oklch, var(--rose) 7%, white);
-        --rose-100: color-mix(in oklch, var(--rose) 16%, white);
-        --rose-150: color-mix(in oklch, var(--rose) 26%, white);
-        --rose-200: color-mix(in oklch, var(--rose) 38%, white);
-        --rose-300: color-mix(in oklch, var(--rose) 58%, white);
-        --rose-600: color-mix(in oklch, var(--rose) 100%, black 10%);
-        --rose-700: color-mix(in oklch, var(--rose) 100%, black 24%);
-        --rose-900: color-mix(in oklch, var(--rose) 100%, black 46%);
-        --gold-100: color-mix(in oklch, var(--gold) 22%, white);
-        --gold-300: color-mix(in oklch, var(--gold) 55%, white);
-        --gold-600: color-mix(in oklch, var(--gold) 100%, black 12%);
-        --shadow-rose: color-mix(in oklch, var(--rose) 35%, transparent);
-        --sage: #9caa8a;
-
         position: relative;
         width: 100%;
         max-width: 760px;
         margin: 0 auto;
         overflow: hidden;
         background: var(--rose-50);
-        color: #3a2530;
+        color: var(--ink);
         direction: rtl;
         min-height: 100vh;
       }
@@ -145,8 +652,8 @@
         opacity: 0;
         transform: translateY(18px);
         transition:
-          opacity 0.7s ease,
-          transform 0.7s ease;
+          opacity 0.8s var(--ease-out),
+          transform 0.8s var(--ease-out);
       }
       .reveal.in-view {
         opacity: 1;
@@ -159,8 +666,38 @@
         text-align: center;
         color: var(--rose-900);
       }
+      /* خط ذهبي متلاشٍ تحت العناوين */
+      .section-title::after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 2px;
+        margin: 12px auto 0;
+        border-radius: 2px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--gold),
+          transparent
+        );
+        transition:
+          transform 0.9s var(--ease-out) 0.25s,
+          opacity 0.9s var(--ease-out) 0.25s;
+      }
+      .reveal:not(.in-view) .section-title::after {
+        transform: scaleX(0.2);
+        opacity: 0;
+      }
       #invite .section-title {
         margin-bottom: 30px;
+      }
+      /* وصف قصير تحت العنوان: موحّد لكل الأقسام */
+      #invite .section-sub {
+        text-align: center;
+        font-size: 13px;
+        line-height: 1.9;
+        color: var(--ink-3);
+        margin: -14px 0 22px;
       }
       .icon-circle {
         width: 40px;
@@ -211,6 +748,7 @@
       .btn-outline:hover {
         background: var(--rose-50);
         border-color: var(--rose-300);
+        transform: translateY(-1px);
       }
       .btn:active {
         transform: scale(0.97);
@@ -242,7 +780,7 @@
         flex: 1;
         font-family: "Almarai", sans-serif;
         font-size: 14px;
-        color: #3a2530;
+        color: var(--ink);
         background: transparent;
         resize: none;
         direction: rtl;
@@ -255,58 +793,54 @@
         width: 30px;
         height: 30px;
       }
-
-      /* --- topbar --- */
-      .topbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 18px 20px 0;
-        position: relative;
-        z-index: 3;
+      .field input[type="number"] {
+        -moz-appearance: textfield;
+        appearance: textfield;
       }
-      .icon-btn {
-        width: 38px;
-        height: 38px;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(3px);
+      .field input[type="number"]::-webkit-inner-spin-button,
+      .field input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      .stepper {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        width: 26px;
+        border: 1px solid var(--rose-100);
+        border-radius: 9px;
+        background: var(--rose-50);
+        overflow: hidden;
+      }
+      .stepper button {
+        height: 15px;
         border: none;
+        background: transparent;
+        color: var(--rose-600);
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(--rose-700);
         cursor: pointer;
+        padding: 0;
+        transition:
+          background 0.2s ease,
+          color 0.2s ease;
       }
-      .icon-btn:hover,
-      .music-pill:hover {
-        background: rgba(255, 255, 255, 0.92);
+      .stepper button + button {
+        border-top: 1px solid var(--rose-100);
       }
-      .icon-btn:active,
-      .music-pill:active {
-        transform: scale(0.94);
+      .stepper button:hover {
+        background: var(--rose);
+        color: #fff;
       }
-      .music-pill {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        background: rgba(255, 255, 255, 0.82);
-        backdrop-filter: blur(3px);
-        border-radius: 999px;
-        padding: 8px 14px;
-        font-size: 12px;
-        color: var(--rose-700);
-        font-weight: 700;
-        border: none;
-        cursor: pointer;
-        font-family: "Almarai", sans-serif;
+      .stepper button:active svg {
+        transform: scale(0.85);
       }
-      .music-pill svg {
-        transition: transform 0.4s ease;
+      .stepper button:focus-visible {
+        outline: none;
+        background: var(--rose-100);
       }
-      .music-pill.playing svg {
-        animation: spin 3s linear infinite;
-      }
+
       @keyframes spin {
         to {
           transform: rotate(360deg);
@@ -323,7 +857,7 @@
             rgba(255, 248, 249, 0.4) 60%,
             var(--rose-50) 100%
           ),
-          url("https://images.pexels.com/photos/3608751/pexels-photo-3608751.jpeg?auto=compress&cs=tinysrgb&w=1200");
+          url("images/bg.webp");
         background-size: cover;
         background-position: center 15%;
         background-repeat: no-repeat;
@@ -335,13 +869,13 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 30px 30px 10px;
-        animation: hero-in 1s ease both;
+        padding: 80px 30px 10px;
+        animation: hero-in 1s var(--ease-out) both;
       }
       @keyframes hero-in {
         from {
           opacity: 0;
-          transform: translateY(14px);
+          transform: translateY(18px);
         }
         to {
           opacity: 1;
@@ -397,7 +931,7 @@
       }
       .tagline {
         font-size: 14px;
-        color: #7a4f5c;
+        color: var(--ink-2);
         margin-top: 8px;
         line-height: 1.9;
         text-shadow: 0 1px 6px rgba(255, 251, 250, 0.75);
@@ -499,7 +1033,7 @@
       }
       .cd-label {
         font-size: 11px;
-        color: #9a7683;
+        color: var(--ink-3);
         margin-top: 4px;
         letter-spacing: 0.3px;
       }
@@ -539,83 +1073,137 @@
       .verse-body {
         font-size: 13.5px;
         line-height: 2.1;
-        color: #6d4a55;
+        color: var(--ink-2);
       }
 
       /* --- details --- */
       .details-row {
         display: flex;
-        gap: 14px;
+        gap: 16px;
         align-items: stretch;
-        min-height: 230px;
+        min-height: 250px;
       }
       .venue-art {
-        flex: 0 0 150px;
-        border-radius: 20px;
+        flex: 0 0 160px;
+        border-radius: 22px;
         overflow: hidden;
         position: relative;
         background: linear-gradient(160deg, var(--rose-150), var(--gold-100));
-        box-shadow: 0 8px 16px -14px var(--shadow-rose);
-        border: 1px solid var(--rose-50);
+        box-shadow: 0 14px 28px -16px var(--shadow-rose);
+        border: 1px solid var(--gold-300);
+        padding: 5px;
       }
       .venue-art img {
         position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
+        inset: 5px;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
         object-fit: cover;
+        border-radius: 17px;
+        transition: transform 0.6s ease;
       }
-      .details .section-title {
-        margin-bottom: 22px;
+      .venue-art:hover img {
+        transform: scale(1.04);
+      }
+      .venue-art::after {
+        content: "";
+        position: absolute;
+        inset: 5px;
+        border-radius: 17px;
+        background: linear-gradient(
+          to top,
+          rgba(58, 37, 48, 0.35),
+          transparent 45%
+        );
+        pointer-events: none;
       }
       .detail-cards {
         flex: 1;
         min-width: 0;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
       }
       .dcard {
         flex: 1;
+        position: relative;
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 14px;
         text-align: start;
-        background: #fff;
-        border-radius: 16px;
-        padding: 12px 14px;
-        border: 1px solid var(--rose-50);
-        box-shadow: 0 8px 16px -14px var(--shadow-rose);
+        background: linear-gradient(135deg, #fff 60%, var(--rose-50));
+        border-radius: 18px;
+        padding: 14px 18px;
+        border: 1px solid var(--rose-100);
+        box-shadow: 0 10px 22px -16px var(--shadow-rose);
+        overflow: hidden;
         transition:
-          transform 0.2s ease,
-          box-shadow 0.2s ease;
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          border-color 0.25s ease;
+      }
+      .dcard::before {
+        content: "";
+        position: absolute;
+        inset-block: 14px;
+        inset-inline-start: 0;
+        width: 3px;
+        border-radius: 0 3px 3px 0;
+        background: linear-gradient(var(--gold-300), var(--rose-300));
       }
       .dcard:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 20px -14px var(--shadow-rose);
+        transform: translateY(-3px);
+        border-color: var(--rose-150);
+        box-shadow: 0 16px 28px -18px var(--shadow-rose);
       }
       .dcard .icon-circle {
-        width: 38px;
-        height: 38px;
+        width: 44px;
+        height: 44px;
         flex-shrink: 0;
+        background: linear-gradient(145deg, var(--rose-50), var(--rose-100));
+        border: 1px solid var(--rose-150);
+        color: var(--rose-700);
+        box-shadow: inset 0 1px 0 #fff;
+      }
+      .dcard .icon-circle svg {
+        width: 18px;
+        height: 18px;
       }
       .dcard .lbl {
-        font-size: 11px;
-        color: #a4818c;
-        margin-bottom: 2px;
+        font-size: 11.5px;
+        color: var(--gold-600);
+        letter-spacing: 0.3px;
+        margin-bottom: 6px;
+        line-height: 1.3;
       }
       .dcard .val {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 700;
-        color: #3a2530;
-        line-height: 1.4;
+        color: var(--rose-900);
+        line-height: 1.5;
+      }
+      @media (max-width: 420px) {
+        .venue-art {
+          flex-basis: 120px;
+        }
+        .dcard {
+          padding: 12px 14px;
+          gap: 11px;
+        }
+        .dcard .icon-circle {
+          width: 38px;
+          height: 38px;
+        }
+        .dcard .val {
+          font-size: 13px;
+        }
       }
 
       /* --- map --- */
       .map-box {
         position: relative;
         height: 190px;
-        border-radius: 20px;
+        border-radius: 18px;
         overflow: hidden;
         margin-bottom: 16px;
         border: 1px solid var(--rose-100);
@@ -746,20 +1334,11 @@
       }
 
       /* --- rsvp --- */
-      .rsvp-sub {
-        text-align: center;
-        font-size: 13px;
-        color: #8a6570;
-        line-height: 1.9;
-      }
-      #invite .rsvp-sub {
-        margin-bottom: 14px;
-      }
       #invite .attend-q {
         font-size: 13px;
         font-weight: 700;
-        color: #3a2530;
-        margin: 18px 0 22px;
+        color: var(--ink);
+        margin: 18px 0 14px;
         text-align: center;
       }
       .attend-row {
@@ -779,13 +1358,6 @@
       }
 
       /* --- blessing --- */
-      .blessing-sub {
-        text-align: center;
-        font-size: 13px;
-        color: #8a6570;
-        line-height: 1.9;
-        margin-bottom: 20px;
-      }
       .field.textarea {
         align-items: flex-start;
       }
@@ -801,12 +1373,6 @@
       }
 
       /* --- guestbook --- */
-      .gb-hint {
-        text-align: center;
-        font-size: 12.5px;
-        color: #a8798a;
-        margin-bottom: 18px;
-      }
       .gtrack {
         display: flex;
         gap: 14px;
@@ -824,7 +1390,7 @@
         background: #fff;
         border-radius: 18px;
         padding: 20px 18px;
-        border: 1px solid var(--rose-50);
+        border: 1px solid var(--rose-100);
         box-shadow: 0 8px 18px -14px var(--shadow-rose);
         overflow: hidden;
         flex: 0 0 78%;
@@ -842,7 +1408,7 @@
         left: 12px;
         font-family: "Marhey", serif;
         font-size: 64px;
-        color: var(--rose-50);
+        color: var(--rose-100);
         line-height: 1;
       }
       .gcard .gtop {
@@ -874,7 +1440,7 @@
         position: relative;
         font-size: 13px;
         line-height: 1.9;
-        color: #5c4550;
+        color: var(--ink-2);
       }
       .gdots {
         display: flex;
@@ -905,7 +1471,7 @@
             color-mix(in oklch, var(--rose-700) 82%, transparent),
             color-mix(in oklch, var(--rose-900) 90%, transparent)
           ),
-          url("https://images.pexels.com/photos/3608751/pexels-photo-3608751.jpeg?auto=compress&cs=tinysrgb&w=1000");
+          url("images/bg.webp");
         background-size: cover;
         background-position: center 25%;
         color: #fbe9ed;
@@ -973,10 +1539,162 @@
         right: 22px;
       }
 
+      /* القائمة الجانبية العمودية */
+      .side-nav {
+        position: fixed;
+        z-index: 50;
+        top: 50%;
+        left: max(10px, calc(50% - 380px - 84px));
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        padding: 10px 6px;
+        border-radius: 999px;
+        background: rgba(253, 248, 244, 0.92);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid color-mix(in oklch, var(--gold) 30%, transparent);
+        box-shadow: 0 14px 34px -14px rgba(90, 30, 45, 0.45);
+        direction: rtl;
+        animation: sideNavIn 0.8s 0.4s var(--ease-out) both;
+      }
+      @keyframes sideNavIn {
+        from {
+          opacity: 0;
+          transform: translate(-24px, -50%);
+        }
+      }
+      .side-nav a,
+      .side-nav button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+        width: 54px;
+        padding: 7px 0;
+        border: 0;
+        border-radius: 999px;
+        background: none;
+        color: var(--ink-2);
+        font-family: "Almarai", sans-serif;
+        font-size: 10px;
+        line-height: 1.2;
+        text-align: center;
+        cursor: pointer;
+      }
+      .side-nav a:hover,
+      .side-nav button:hover {
+        color: var(--rose-700);
+        background: var(--rose-50);
+      }
+      .side-nav svg {
+        width: 19px;
+        height: 19px;
+      }
+      .side-nav .sn-music.playing svg {
+        animation: spin 4s linear infinite;
+      }
+      .side-nav .sn-music.playing {
+        color: var(--rose-700);
+      }
+      .side-nav .sn-rings {
+        width: 50px;
+        height: 50px;
+        margin: 4px 0;
+        padding: 0;
+        justify-content: center;
+        color: #fff;
+        background: linear-gradient(
+          145deg,
+          var(--gold-300),
+          var(--gold) 55%,
+          var(--gold-600)
+        );
+        box-shadow:
+          0 8px 18px -8px var(--gold-600),
+          0 0 0 4px color-mix(in oklch, var(--gold) 18%, transparent);
+      }
+      .side-nav .sn-rings:hover {
+        color: #fff;
+        background: linear-gradient(
+          145deg,
+          var(--gold-300),
+          var(--gold) 55%,
+          var(--gold-600)
+        );
+        transform: scale(1.06);
+      }
+      .side-nav .sn-rings svg {
+        width: 24px;
+        height: 24px;
+      }
+      .side-nav button:disabled {
+        opacity: 0.45;
+        pointer-events: none;
+      }
+
+      /* الشاشات التي لا يتسع فيها جانب البطاقة للقائمة: شريط سفلي أفقي */
+      @media (max-width: 939px) {
+        .side-nav {
+          top: auto;
+          left: 50%;
+          bottom: calc(12px + env(safe-area-inset-bottom));
+          transform: translateX(-50%);
+          flex-direction: row;
+          gap: 2px;
+          padding: 6px 10px;
+          width: max-content;
+          max-width: calc(100% - 24px);
+          animation-name: bottomNavIn;
+          animation-fill-mode: backwards;
+          transition:
+            transform 0.4s var(--ease-out),
+            opacity 0.3s ease;
+        }
+        /* يختفي عند النزول ويعود عند الصعود */
+        .side-nav.nav-hidden {
+          transform: translate(-50%, calc(100% + 24px));
+          opacity: 0;
+          pointer-events: none;
+        }
+        .side-nav a,
+        .side-nav button {
+          width: 58px;
+          padding: 6px 0;
+        }
+        /* زر الحلقات مرفوع فوق الشريط */
+        .side-nav .sn-rings {
+          width: 52px;
+          height: 52px;
+          margin: -22px 4px 0;
+          flex-shrink: 0;
+        }
+        /* مساحة أسفل الصفحة حتى لا يغطي الشريط آخر محتوى */
+        .footer {
+          padding-bottom: 112px;
+        }
+        .fab {
+          bottom: 96px;
+        }
+      }
+      @keyframes bottomNavIn {
+        from {
+          opacity: 0;
+          transform: translate(-50%, 24px);
+        }
+      }
+      @media (max-width: 360px) {
+        .side-nav a,
+        .side-nav button {
+          width: 50px;
+          font-size: 9px;
+        }
+      }
+
       /* نافذة الإشعارات */
       .notice {
-        --n-rose: #c2496b;
-        --n-gold: #c9a24b;
         position: fixed;
         inset: 0;
         z-index: 1000;
@@ -990,7 +1708,9 @@
         direction: rtl;
         opacity: 0;
         visibility: hidden;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
+        transition:
+          opacity 0.3s ease,
+          visibility 0.3s ease;
       }
       .notice.show {
         opacity: 1;
@@ -1002,12 +1722,12 @@
         max-width: 360px;
         padding: 38px 28px 26px;
         text-align: center;
-        background: linear-gradient(180deg, #fff 0%, #fdf4f6 100%);
+        background: linear-gradient(180deg, #fff 0%, var(--rose-50) 100%);
         border-radius: 24px;
-        border: 1px solid color-mix(in oklch, var(--n-gold) 35%, white);
+        border: 1px solid var(--gold-300);
         box-shadow: 0 30px 60px -18px rgba(90, 30, 45, 0.45);
-        transform: translateY(16px) scale(0.94);
-        transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.3);
+        transform: translateY(18px) scale(0.94);
+        transition: transform 0.45s var(--ease-out);
       }
       .notice.show .notice-card {
         transform: none;
@@ -1017,7 +1737,7 @@
         position: absolute;
         inset: 7px;
         border-radius: 18px;
-        border: 1px dashed color-mix(in oklch, var(--n-gold) 45%, white);
+        border: 1px dashed var(--gold-300);
         pointer-events: none;
       }
       .notice-icon {
@@ -1029,14 +1749,16 @@
         align-items: center;
         justify-content: center;
         color: #fff;
-        background: linear-gradient(135deg, var(--n-rose), #8f2f4c);
-        box-shadow: 0 10px 22px -8px rgba(194, 73, 107, 0.7),
-          0 0 0 6px color-mix(in oklch, var(--n-rose) 12%, white);
+        background: linear-gradient(135deg, var(--rose-600), var(--rose-700));
+        box-shadow:
+          0 10px 22px -8px var(--shadow-rose),
+          0 0 0 6px var(--rose-100);
       }
       .notice.error .notice-icon {
-        background: linear-gradient(135deg, #b8862e, #8a6420);
-        box-shadow: 0 10px 22px -8px rgba(185, 134, 46, 0.7),
-          0 0 0 6px color-mix(in oklch, var(--n-gold) 18%, white);
+        background: linear-gradient(135deg, var(--gold-600), var(--gold-700));
+        box-shadow:
+          0 10px 22px -8px var(--gold-600),
+          0 0 0 6px var(--gold-100);
       }
       .notice-icon svg {
         width: 32px;
@@ -1045,15 +1767,16 @@
       .notice-title {
         margin: 0 0 8px;
         font-family: "Marhey", "Almarai", serif;
+        font-weight: 400;
         font-size: 1.35rem;
-        color: #8f2f4c;
+        color: var(--rose-900);
       }
       .notice-msg {
         margin: 0 0 22px;
         font-family: "Almarai", sans-serif;
         font-size: 0.98rem;
         line-height: 1.8;
-        color: #5c4250;
+        color: var(--ink-2);
       }
       .notice-btn {
         position: relative;
@@ -1066,16 +1789,18 @@
         font-size: 1rem;
         color: #fff;
         cursor: pointer;
-        background: linear-gradient(135deg, var(--n-rose), #8f2f4c);
-        box-shadow: 0 8px 18px -8px rgba(194, 73, 107, 0.8);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        background: linear-gradient(135deg, var(--rose-600), var(--rose-700));
+        box-shadow: 0 12px 24px -10px var(--shadow-rose);
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
       }
       .notice-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 12px 22px -8px rgba(194, 73, 107, 0.9);
+        transform: translateY(-1px);
+        box-shadow: 0 16px 30px -10px var(--shadow-rose);
       }
       .notice-btn:focus-visible {
-        outline: 2px solid var(--n-gold);
+        outline: 2px solid var(--gold-600);
         outline-offset: 3px;
       }
     </style>
@@ -1084,39 +1809,6 @@
     <div id="invite" dir="rtl">
       <!-- HERO -->
       <section class="hero">
-        <div class="topbar">
-          <button class="icon-btn" aria-label="القائمة">
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            >
-              <path d="M3 6h18M3 12h18M3 18h18" />
-            </svg>
-          </button>
-          <button class="music-pill" aria-label="تشغيل الموسيقى">
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M9 18V5l12-2v13" />
-              <circle cx="6" cy="18" r="3" />
-              <circle cx="18" cy="16" r="3" />
-            </svg>
-            تشغيل الموسيقى
-          </button>
-        </div>
-
         <div class="hero-content">
           <svg
             class="rings"
@@ -1172,7 +1864,7 @@
           </div>
 
           <p class="tagline">ندعوكم لمشاركتنا أجمل أيامنا</p>
-          <div class="date-pill">20 ديسمبر 2026</div>
+          <div class="date-pill">29 أكتوبر 2026</div>
         </div>
 
         <a
@@ -1197,9 +1889,7 @@
 
       <!-- COUNTDOWN -->
       <section class="countdown reveal" id="countdown-section">
-        <p class="section-title" style="font-size: 20px">
-          العد التنازلي للزفاف
-        </p>
+        <h2 class="section-title">العد التنازلي للزفاف</h2>
         <div class="countdown-grid" id="countdown">
           <div class="cd-box">
             <div class="cd-num" data-unit="days">--</div>
@@ -1235,13 +1925,16 @@
 
       <!-- DETAILS -->
       <section class="details reveal">
-        <p class="section-title">تفاصيل الحفل</p>
+        <h2 class="section-title">تفاصيل الحفل</h2>
         <div class="details-row">
           <div class="venue-art">
             <img
-              src="https://images.pexels.com/photos/1128782/pexels-photo-1128782.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="images/photo.webp"
               alt="قاعة الروز"
+              width="600"
+              height="400"
               loading="lazy"
+              decoding="async"
             />
           </div>
           <div class="detail-cards">
@@ -1261,7 +1954,7 @@
               </div>
               <div>
                 <div class="lbl">التاريخ</div>
-                <div class="val">الأحد 20 ديسمبر 2026</div>
+                <div class="val">الخميس 29 أكتوبر 2026</div>
               </div>
             </div>
             <div class="dcard">
@@ -1309,11 +2002,12 @@
       </section>
 
       <!-- MAP -->
-      <section class="map reveal">
-        <p class="section-title">موقع الحفل</p>
+      <section class="map reveal" id="map-section">
+        <h2 class="section-title">موقع الحفل</h2>
         <div class="map-box">
           <iframe
-            src="https://maps.google.com/maps?ll=31.5017,34.4668&z=16&t=m&output=embed"
+            data-src="https://maps.google.com/maps?ll=31.5017,34.4668&z=16&t=m&output=embed"
+            title="خريطة موقع الحفل"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             allowfullscreen
@@ -1355,7 +2049,7 @@
         <div class="map-btns">
           <a
             class="btn btn-outline"
-            href="https://maps.google.com/?q=%D9%85%D8%AF%D9%8A%D9%86%D8%A9+%D8%BA%D8%B2%D8%A9"
+            href="https://www.google.com/maps/search/?api=1&query=31.5017,34.4668"
             target="_blank"
             rel="noopener"
           >
@@ -1393,9 +2087,9 @@
       </section>
 
       <!-- RSVP -->
-      <section class="rsvp reveal">
-        <p class="section-title">تأكيد الحضور</p>
-        <p class="rsvp-sub">نرجو تأكيد حضوركم ليكتمل فرحنا بوجودكم</p>
+      <section class="rsvp reveal" id="rsvp-section">
+        <h2 class="section-title">تأكيد الحضور</h2>
+        <p class="section-sub">نرجو تأكيد حضوركم ليكتمل فرحنا بوجودكم</p>
 
         <form id="rsvpForm">
           <label class="field">
@@ -1456,6 +2150,36 @@
               max="20"
               placeholder="عدد المرافقين"
             />
+            <span class="stepper">
+              <button type="button" data-step="1" aria-label="زيادة">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M6 15l6-6 6 6" />
+                </svg>
+              </button>
+              <button type="button" data-step="-1" aria-label="إنقاص">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </button>
+            </span>
           </label>
 
           <p class="attend-q">هل ستحضر الحفل؟</p>
@@ -1511,8 +2235,8 @@
 
       <!-- BLESSING -->
       <section class="blessing reveal">
-        <p class="section-title">رسالة مباركة</p>
-        <p class="blessing-sub">
+        <h2 class="section-title">رسالة مباركة</h2>
+        <p class="section-sub">
           اكتب لنا تهنئتك وكلماتك الجميلة، سيتم عرضها هنا
         </p>
 
@@ -1596,8 +2320,8 @@
 
       <!-- GUESTBOOK -->
       <section class="guestbook reveal">
-        <p class="section-title">رسائل الضيوف</p>
-        <p class="gb-hint">اسحبوا لعرض جميع رسائل الضيوف ‹ ›</p>
+        <h2 class="section-title">رسائل الضيوف</h2>
+        <p class="section-sub">اسحبوا لعرض جميع رسائل الضيوف</p>
 
         <!-- تُعبّأ تلقائياً من Google Sheets -->
         <div class="gtrack" id="gTrack"></div>
@@ -1647,6 +2371,93 @@
       </footer>
     </div>
 
+    <!-- القائمة الجانبية -->
+    <nav class="side-nav" aria-label="القائمة السريعة">
+      <a href="#" id="snCall">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"
+          />
+        </svg>
+        اتصل
+      </a>
+      <button
+        type="button"
+        class="sn-music"
+        id="snMusic"
+        aria-label="تشغيل الموسيقى"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M9 18V5l12-2v13" />
+          <circle cx="6" cy="18" r="3" />
+          <circle cx="18" cy="16" r="3" />
+        </svg>
+        موسيقى
+      </button>
+      <button
+        type="button"
+        class="sn-rings"
+        id="snTop"
+        aria-label="العودة للأعلى"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+        >
+          <circle cx="9" cy="14" r="5.5" />
+          <circle cx="15" cy="14" r="5.5" />
+          <path d="M10.5 5.5l1.5-2 1.5 2-1.5 1.5z" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <a href="#map-section">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"
+          />
+          <circle cx="12" cy="9.5" r="2.4" />
+        </svg>
+        الموقع
+      </a>
+      <a href="#rsvp-section" aria-label="تأكيد الحضور">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"
+          />
+        </svg>
+        الحضور
+      </a>
+    </nav>
+
     <script>
       // ===== الإعدادات =====
       var CONFIG = {
@@ -1684,20 +2495,82 @@
         });
       }
 
+      // خريطة جوجل ثقيلة: لا تُحمَّل إلا عند الاقتراب منها
+      (function () {
+        var mapFrame = document.querySelector(".map-box iframe");
+        function loadMap() {
+          if (!mapFrame.src) mapFrame.src = mapFrame.dataset.src;
+        }
+        if (!("IntersectionObserver" in window)) return loadMap();
+        var mapIo = new IntersectionObserver(
+          function (entries) {
+            if (entries[0].isIntersecting) {
+              loadMap();
+              mapIo.disconnect();
+            }
+          },
+          { rootMargin: "300px 0px" },
+        );
+        mapIo.observe(mapFrame);
+      })();
+
       // الموسيقى: تبدأ مع أول لمسة على الصفحة (المتصفحات تمنع التشغيل التلقائي)
-      var musicBtn = document.querySelector(".music-pill");
-      var musicLabel = musicBtn.lastChild;
-      var music = new Audio(CONFIG.musicUrl);
+      // زر الموسيقى الوحيد موجود في القائمة الجانبية
+      var musicBtn = document.getElementById("snMusic");
+      // لا يُحمَّل ملف الموسيقى (عدة ميغابايت) إلا عند أول تشغيل
+      var music = new Audio();
+      music.preload = "none";
       music.loop = true;
-      music.preload = "auto";
       var userPaused = false;
       var fadeTimer = null;
 
+      // القائمة الجانبية
+      var sideNav = document.querySelector(".side-nav");
+      document.getElementById("snCall").href = "tel:+" + CONFIG.whatsappNumber;
+      document.getElementById("snTop").addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      // على الجوال: الشريط السفلي يختفي عند النزول أو الكتابة، ويعود عند الصعود
+      (function () {
+        var lastY = window.scrollY;
+        var navTicking = false;
+        function isTyping() {
+          var el = document.activeElement;
+          return el && (el.tagName === "INPUT" || el.tagName === "TEXTAREA");
+        }
+        function update() {
+          var y = window.scrollY;
+          var nearBottom =
+            window.innerHeight + y >= document.documentElement.scrollHeight - 40;
+          if (isTyping()) sideNav.classList.add("nav-hidden");
+          else if (y < 80 || nearBottom || y < lastY - 6)
+            sideNav.classList.remove("nav-hidden");
+          else if (y > lastY + 6) sideNav.classList.add("nav-hidden");
+          if (Math.abs(y - lastY) > 6) lastY = y;
+          navTicking = false;
+        }
+        window.addEventListener(
+          "scroll",
+          function () {
+            if (navTicking) return;
+            navTicking = true;
+            requestAnimationFrame(update);
+          },
+          { passive: true },
+        );
+        document.addEventListener("focusin", function () {
+          if (isTyping()) sideNav.classList.add("nav-hidden");
+        });
+        document.addEventListener("focusout", function () {
+          setTimeout(function () {
+            if (!isTyping()) sideNav.classList.remove("nav-hidden");
+          }, 100);
+        });
+      })();
+
       function setMusicUI(playing) {
         musicBtn.classList.toggle("playing", playing);
-        musicLabel.textContent = playing
-          ? " إيقاف الموسيقى"
-          : " تشغيل الموسيقى";
         musicBtn.setAttribute(
           "aria-label",
           playing ? "إيقاف الموسيقى" : "تشغيل الموسيقى",
@@ -1705,6 +2578,7 @@
       }
       function playMusic() {
         clearInterval(fadeTimer);
+        if (!music.src) music.src = CONFIG.musicUrl;
         music.volume = 0;
         return music.play().then(function () {
           setMusicUI(true);
@@ -1723,7 +2597,7 @@
       music.addEventListener("error", function () {
         setMusicUI(false);
         musicBtn.disabled = true;
-        musicLabel.textContent = " الموسيقى غير متاحة";
+        musicBtn.setAttribute("aria-label", "الموسيقى غير متاحة");
       });
 
       musicBtn.addEventListener("click", function (e) {
@@ -1737,7 +2611,9 @@
         }
       });
 
-      function startOnFirstTouch() {
+      function startOnFirstTouch(e) {
+        // الضغط على زر الموسيقى نفسه يتولاه حدث النقر
+        if (musicBtn.contains(e.target)) return;
         document.removeEventListener("pointerdown", startOnFirstTouch);
         if (!userPaused && music.paused) playMusic().catch(function () {});
       }
@@ -1757,7 +2633,7 @@
       });
 
       // العد التنازلي الحقيقي لتاريخ الحفل
-      var weddingDate = new Date("2026-12-20T19:00:00");
+      var weddingDate = new Date("2026-10-29T19:00:00");
       var countdownEl = document.getElementById("countdown");
       var cdUnits = {
         days: countdownEl.querySelector('[data-unit="days"]'),
@@ -1794,6 +2670,18 @@
       }
       tick();
       var countdownTimer = setInterval(tick, 1000);
+
+      // أزرار عدد المرافقين
+      document.querySelectorAll(".stepper button").forEach(function (b) {
+        b.addEventListener("click", function (e) {
+          e.preventDefault();
+          var input = b.closest(".field").querySelector("input");
+          var min = +input.min || 0;
+          var max = +input.max || 20;
+          var v = (parseInt(input.value, 10) || 0) + +b.dataset.step;
+          input.value = Math.min(max, Math.max(min, v));
+        });
+      });
 
       // زر الحضور
       var attendRow = document.getElementById("attendRow");
@@ -1904,7 +2792,8 @@
                 data.attend === "yes"
                   ? {
                       title: "تم تأكيد حضوركم",
-                      message: "شكراً لكم! تم استلام ردكم بنجاح، ونتشرف بوجودكم معنا.",
+                      message:
+                        "شكراً لكم! تم استلام ردكم بنجاح، ونتشرف بوجودكم معنا.",
                     }
                   : {
                       icon: "heart",
@@ -1981,7 +2870,7 @@
         .addEventListener("click", function () {
           var shareData = {
             title: document.title,
-            text: "دعوة زفاف محمد و سارة",
+            text: "دعوة زفاف محمد وسارة",
             url: location.href,
           };
           if (navigator.share) {
@@ -2090,7 +2979,8 @@
         } catch (err) {}
         render(Array.isArray(cached) ? cached : []);
 
-        if (CONFIG.sheetUrl) {
+        // جلب الرسائل بعد اكتمال تحميل الصفحة حتى لا ينافس المحتوى الأول
+        function loadMessages() {
           fetch(CONFIG.sheetUrl)
             .then(function (r) {
               return r.json();
@@ -2106,6 +2996,10 @@
             .catch(function () {
               /* تبقى رسالة "كونوا أول من يبارك" عند فشل التحميل */
             });
+        }
+        if (CONFIG.sheetUrl) {
+          if (document.readyState === "complete") loadMessages();
+          else window.addEventListener("load", loadMessages);
         }
 
         var ticking = false;
@@ -2141,9 +3035,9 @@
             "BEGIN:VCALENDAR",
             "VERSION:2.0",
             "BEGIN:VEVENT",
-            "SUMMARY:حفل زفاف محمد و سارة",
-            "DTSTART:20261220T190000",
-            "DTEND:20261220T230000",
+            "SUMMARY:حفل زفاف محمد وسارة",
+            "DTSTART:20261029T190000",
+            "DTEND:20261029T230000",
             "LOCATION:قاعة الروز – غزة",
             "END:VEVENT",
             "END:VCALENDAR",
