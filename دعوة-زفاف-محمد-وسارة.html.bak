@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دعوة زفاف محمد وسارة</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rakkas&family=Amiri+Quran&family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@300;400;500;700;800&display=swap">
+<style>
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html { scroll-behavior: smooth; }
+  html, body { margin: 0; }
+  body {
+    background: #f6e9ec;
+    font-family: "Tajawal", "Segoe UI", sans-serif;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  /* خلفية الصفحة: نفس صورة الهيرو، ثابتة خلف البطاقة */
+  body::before {
+    content: "";
+    position: fixed; inset: 0; z-index: -1;
+    background-image:
+      linear-gradient(180deg, rgba(246,233,236,.35), rgba(239,224,228,.55)),
+      url('https://images.pexels.com/photos/3608751/pexels-photo-3608751.jpeg?auto=compress&cs=tinysrgb&w=1920');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    transform: scale(1.03);
+  }
+  @media (min-width: 640px) {
+    body { padding: 28px 16px; }
+  }
+  a { color: #8a2f47; text-decoration: none; }
+  a:hover { color: #5c1f30; }
+  button, a, input, textarea { transition: all .2s ease; }
+  button:focus-visible, a:focus-visible {
+    outline: 2px solid var(--gold-600, #b8923a); outline-offset: 3px; border-radius: 4px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  }
+
+  #invite {
+    --rose: #c2496b;
+    --gold: #c9a24b;
+    --rose-50:  color-mix(in oklch, var(--rose) 7%, white);
+    --rose-100: color-mix(in oklch, var(--rose) 16%, white);
+    --rose-150: color-mix(in oklch, var(--rose) 26%, white);
+    --rose-200: color-mix(in oklch, var(--rose) 38%, white);
+    --rose-300: color-mix(in oklch, var(--rose) 58%, white);
+    --rose-600: color-mix(in oklch, var(--rose) 100%, black 10%);
+    --rose-700: color-mix(in oklch, var(--rose) 100%, black 24%);
+    --rose-900: color-mix(in oklch, var(--rose) 100%, black 46%);
+    --gold-100: color-mix(in oklch, var(--gold) 22%, white);
+    --gold-300: color-mix(in oklch, var(--gold) 55%, white);
+    --gold-600: color-mix(in oklch, var(--gold) 100%, black 12%);
+    --shadow-rose: color-mix(in oklch, var(--rose) 35%, transparent);
+    --sage: #9caa8a;
+
+    position: relative;
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: var(--rose-50);
+    color: #3a2530;
+    direction: rtl;
+    min-height: 100vh;
+  }
+  @media (min-width: 640px) {
+    #invite {
+      min-height: 0;
+      border-radius: 26px;
+      box-shadow: 0 30px 60px -20px rgba(90, 30, 45, .35);
+    }
+  }
+  #invite h1, #invite h2, #invite h3, #invite .display {
+    font-family: "Rakkas", "Tajawal", serif;
+    font-weight: 400;
+    margin: 0;
+  }
+  #invite p { margin: 0; }
+  #invite section { padding: 44px 22px; position: relative; }
+  @media (min-width: 640px) {
+    #invite section { padding: 56px 44px; }
+  }
+
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in-view { opacity: 1; transform: translateY(0); }
+
+  /* --- shared bits --- */
+  .section-title {
+    font-size: clamp(21px, 6vw, 25px);
+    text-align: center;
+    color: var(--rose-900);
+    margin-bottom: 10px;
+  }
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 auto 26px;
+    width: 140px;
+  }
+  .divider .ln { flex: 1; height: 1px; background: var(--rose-200); }
+  .divider .dm {
+    width: 7px; height: 7px; background: var(--gold-600);
+    transform: rotate(45deg); border-radius: 1px; flex-shrink: 0;
+  }
+  .icon-circle {
+    width: 40px; height: 40px; border-radius: 999px;
+    background: var(--rose-50); color: var(--rose-700);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; border: 1px solid var(--rose-100);
+  }
+  .btn {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    border-radius: 999px; font-family: "Tajawal", sans-serif;
+    font-weight: 700; font-size: 15px; padding: 14px 20px;
+    border: none; cursor: pointer; width: 100%;
+    transition: transform .15s ease, box-shadow .2s ease, filter .2s ease, background .2s ease;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--rose-600), var(--rose-700));
+    color: #fff8f5;
+    box-shadow: 0 12px 24px -10px var(--shadow-rose);
+  }
+  .btn-primary:hover { filter: brightness(1.06); box-shadow: 0 16px 30px -10px var(--shadow-rose); transform: translateY(-1px); }
+  .btn-outline {
+    background: #fff; color: var(--rose-700);
+    border: 1.5px solid var(--rose-200);
+  }
+  .btn-outline:hover { background: var(--rose-50); border-color: var(--rose-300); }
+  .btn:active { transform: scale(.97); }
+  .field {
+    display: flex; align-items: center; gap: 10px;
+    background: #fff; border: 1px solid var(--rose-100);
+    border-radius: 16px; padding: 13px 16px; margin-bottom: 12px;
+    box-shadow: 0 6px 16px -12px var(--shadow-rose);
+    transition: border-color .2s ease, box-shadow .2s ease;
+  }
+  .field:focus-within {
+    border-color: var(--rose-300);
+    box-shadow: 0 0 0 3px var(--rose-100), 0 6px 16px -12px var(--shadow-rose);
+  }
+  .field input, .field textarea {
+    border: none; outline: none; flex: 1; font-family: "Tajawal", sans-serif;
+    font-size: 14px; color: #3a2530; background: transparent; resize: none;
+    direction: rtl;
+  }
+  .field input::placeholder, .field textarea::placeholder { color: #b98d9a; }
+  .field .icon-circle { width: 30px; height: 30px; }
+
+  /* --- topbar --- */
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 20px 0; position: relative; z-index: 3;
+  }
+  .icon-btn {
+    width: 38px; height: 38px; border-radius: 999px;
+    background: rgba(255,255,255,.75); backdrop-filter: blur(3px);
+    border: none; display: flex; align-items: center; justify-content: center;
+    color: var(--rose-700); cursor: pointer;
+  }
+  .icon-btn:hover, .music-pill:hover { background: rgba(255,255,255,.92); }
+  .icon-btn:active, .music-pill:active { transform: scale(.94); }
+  .music-pill {
+    display: flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,.82); backdrop-filter: blur(3px); border-radius: 999px;
+    padding: 8px 14px; font-size: 12px; color: var(--rose-700); font-weight: 700;
+    border: none; cursor: pointer; font-family: "Tajawal", sans-serif;
+  }
+  .music-pill svg { transition: transform .4s ease; }
+  .music-pill.playing svg { animation: spin 3s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* --- hero --- */
+  .hero {
+    padding: 0 0 30px;
+    background-image:
+      linear-gradient(180deg, rgba(255,248,249,.25) 0%, rgba(255,248,249,.4) 60%, var(--rose-50) 100%),
+      url('https://images.pexels.com/photos/3608751/pexels-photo-3608751.jpeg?auto=compress&cs=tinysrgb&w=1200');
+    background-size: cover;
+    background-position: center 15%;
+    background-repeat: no-repeat;
+  }
+  .hero-content {
+    position: relative; z-index: 2;
+    display: flex; flex-direction: column; align-items: center;
+    text-align: center; padding: 30px 30px 10px;
+    animation: hero-in 1s ease both;
+  }
+  @keyframes hero-in {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .rings { color: var(--gold-600); margin-bottom: 14px; filter: drop-shadow(0 1px 4px rgba(255,252,251,.8)); }
+  .arch-frame { position: relative; padding: 54px 46px 30px; margin-bottom: 6px; }
+  .arch-frame::before {
+    content: ""; position: absolute; inset: -30px -46px; z-index: 0;
+    background: radial-gradient(60% 60% at 50% 45%, rgba(255,252,251,.92), rgba(255,252,251,0) 74%);
+  }
+  .arch-frame svg.arch { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; overflow: visible; }
+  .names {
+    position: relative; z-index: 1; font-size: clamp(42px, 9.5vw, 76px); line-height: 1.3;
+    font-family: "Aref Ruqaa", "Rakkas", serif;
+    background: linear-gradient(180deg, var(--rose-700), var(--rose-900));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .names .amp {
+    display: block; font-size: clamp(24px, 5.5vw, 34px); color: var(--gold-600);
+    -webkit-text-fill-color: var(--gold-600);
+    margin: -2px 0;
+  }
+  .tagline { font-size: 14px; color: #7a4f5c; margin-top: 8px; line-height: 1.9; text-shadow: 0 1px 6px rgba(255,251,250,.75); }
+  .date-pill {
+    margin-top: 18px; background: #fff; color: var(--rose-700);
+    border: 1px solid var(--rose-150); font-weight: 700; font-size: 13px;
+    padding: 9px 22px; border-radius: 999px;
+    box-shadow: 0 10px 20px -12px var(--shadow-rose);
+  }
+  .scroll-hint {
+    display: flex; justify-content: center; color: var(--rose-300);
+    animation: bob 1.8s ease-in-out infinite;
+  }
+  @keyframes bob { 0%,100%{ transform: translateY(0);} 50%{ transform: translateY(6px);} }
+
+  /* --- countdown --- */
+  .countdown-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; position: relative; }
+  .cd-box {
+    position: relative;
+    background: linear-gradient(180deg, #fff, var(--rose-50) 180%);
+    border-radius: 18px; padding: 18px 4px 15px;
+    text-align: center; box-shadow: 0 10px 22px -14px var(--shadow-rose);
+    border: 1px solid var(--rose-100);
+    overflow: hidden;
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .cd-box::before {
+    content: ""; position: absolute; top: 0; left: 12%; right: 12%; height: 3px;
+    border-radius: 0 0 3px 3px;
+    background: linear-gradient(90deg, transparent, var(--gold-600), transparent);
+    opacity: .8;
+  }
+  .cd-box:hover { transform: translateY(-3px); box-shadow: 0 16px 28px -14px var(--shadow-rose); }
+  .cd-num {
+    font-family: "Rakkas", serif; font-size: 30px; color: var(--rose-700);
+    line-height: 1.2; display: inline-block;
+    font-variant-numeric: tabular-nums;
+  }
+  .cd-num.bump { animation: cd-bump .45s ease; }
+  @keyframes cd-bump {
+    0% { transform: translateY(-8px) scale(.85); opacity: 0; color: var(--gold-600); }
+    60% { transform: translateY(1px) scale(1.04); opacity: 1; }
+    100% { transform: translateY(0) scale(1); }
+  }
+  .cd-label {
+    font-size: 11px; color: #9a7683; margin-top: 4px;
+    letter-spacing: .3px;
+  }
+  .countdown-grid.done .cd-box::before { background: linear-gradient(90deg, transparent, var(--rose-600), transparent); }
+  .cd-finished {
+    text-align: center; font-family: "Rakkas", serif; font-size: 20px;
+    color: var(--rose-700); padding: 6px 0 2px;
+  }
+
+  /* --- verse --- */
+  .verse { text-align: center; }
+  .bism {
+    font-family: "Amiri Quran", serif; font-size: 17px;
+    color: var(--rose-700); margin-bottom: 16px;
+  }
+  .ayah {
+    font-family: "Amiri Quran", serif; font-size: 19px; line-height: 2.3;
+    color: var(--rose-900); margin-bottom: 16px;
+  }
+  .verse-body { font-size: 13.5px; line-height: 2.1; color: #6d4a55; }
+
+  /* --- details --- */
+  .details-row { display: flex; gap: 14px; align-items: stretch; min-height: 230px; }
+  .venue-art {
+    flex: 0 0 150px; border-radius: 20px; overflow: hidden; position: relative;
+    background: linear-gradient(160deg, var(--rose-150), var(--gold-100));
+    box-shadow: 0 8px 16px -14px var(--shadow-rose); border: 1px solid var(--rose-50);
+  }
+  .venue-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .detail-cards { flex: 1; display: flex; flex-wrap: wrap; align-content: center; justify-content: center; gap: 12px; }
+  .dcard {
+    flex: 0 1 112px; width: 112px; aspect-ratio: 1 / 1;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 7px; text-align: center; background: #fff;
+    border-radius: 16px; padding: 10px; border: 1px solid var(--rose-50);
+    box-shadow: 0 8px 16px -14px var(--shadow-rose);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .dcard:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -14px var(--shadow-rose); }
+  .dcard .icon-circle { width: 34px; height: 34px; }
+  .dcard .lbl { font-size: 10.5px; color: #a4818c; }
+  .dcard .val { font-size: 12px; font-weight: 700; color: #3a2530; line-height: 1.4; }
+
+  /* --- map --- */
+  .map-box {
+    position: relative; height: 190px; border-radius: 20px; overflow: hidden;
+    margin-bottom: 16px; border: 1px solid var(--rose-100);
+    background:
+      repeating-linear-gradient(0deg, transparent 0 34px, rgba(255,255,255,.55) 34px 36px),
+      repeating-linear-gradient(90deg, transparent 0 34px, rgba(255,255,255,.55) 34px 36px),
+      linear-gradient(160deg, #eadfdc, #d9c9c4);
+  }
+  .map-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  /* tip sits exactly on the map center, where Google draws its own marker */
+  .pin { position: absolute; top: 50%; left: 50%; width: 0; height: 0; pointer-events: none; }
+  .pin-svg {
+    position: absolute; left: -23px; bottom: -2px; width: 46px; height: 60px;
+    filter: drop-shadow(0 6px 6px rgba(90, 30, 50, .35));
+    transform-origin: 50% 100%;
+    animation: pin-drop .7s cubic-bezier(.3,1.5,.6,1) both, pin-bob 2.6s ease-in-out .7s infinite;
+  }
+  .pin-pulse {
+    position: absolute; left: -14px; top: -5px; width: 28px; height: 10px;
+    border-radius: 50%; background: var(--rose-700); opacity: .35;
+    animation: pin-pulse 2.2s ease-out infinite;
+  }
+  @keyframes pin-drop { from { transform: translateY(-40px); opacity: 0; } to { transform: none; opacity: 1; } }
+  @keyframes pin-bob { 0%,100% { transform: none; } 50% { transform: translateY(-4px); } }
+  @keyframes pin-pulse { 0% { transform: scale(.5); opacity: .45; } 100% { transform: scale(2.4); opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .pin-svg, .pin-pulse { animation: none; } }
+  .pin-label {
+    position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%);
+    background: var(--rose-700); border-radius: 999px; padding: 8px 16px;
+    font-size: 12px; font-weight: 700; color: #fff; white-space: nowrap;
+    display: flex; align-items: center; gap: 6px;
+    box-shadow: 0 6px 14px -8px var(--shadow-rose);
+    pointer-events: none;
+  }
+  .pin-label svg { stroke: #fff !important; }
+  .map-btns { display: flex; flex-direction: row; gap: 10px; }
+  .map-btns .btn { flex: 1; width: auto; padding: 12px 10px; font-size: 12.5px; gap: 6px; }
+  .map-btns a.btn { display: flex; align-items: center; justify-content: center; }
+
+  /* --- rsvp --- */
+  .rsvp-sub { text-align: center; font-size: 13px; color: #8a6570; line-height: 1.9; margin-bottom: 22px; }
+  #invite .attend-q { font-size: 13px; font-weight: 700; color: #3a2530; margin: 18px 0 22px; text-align: center; }
+  .attend-row { display: flex; gap: 10px; margin-bottom: 24px; }
+  .attend-row .btn { padding: 12px 10px; font-size: 13.5px; }
+  .attend-row .btn.selected {
+    background: linear-gradient(135deg, var(--rose-600), var(--rose-700));
+    color: #fff8f5; border-color: transparent;
+    box-shadow: 0 12px 24px -10px var(--shadow-rose);
+  }
+
+  /* --- blessing --- */
+  .blessing-sub { text-align: center; font-size: 13px; color: #8a6570; line-height: 1.9; margin-bottom: 20px; }
+  .field.textarea { align-items: flex-start; }
+  .field.textarea textarea { min-height: 88px; }
+
+  /* --- guestbook --- */
+  .gb-hint { text-align: center; font-size: 12.5px; color: #a8798a; margin-bottom: 18px; }
+  .gtrack {
+    display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory;
+    margin: 0 -22px; padding: 4px 22px 10px; scrollbar-width: none;
+  }
+  .gtrack::-webkit-scrollbar { display: none; }
+  .gcard {
+    position: relative; background: #fff; border-radius: 18px; padding: 20px 18px;
+    border: 1px solid var(--rose-50); box-shadow: 0 8px 18px -14px var(--shadow-rose);
+    overflow: hidden; flex: 0 0 78%; scroll-snap-align: start;
+  }
+  @media (min-width: 640px) { .gcard { flex-basis: 44%; } }
+  .gcard::before {
+    content: "\201D"; position: absolute; top: -18px; left: 12px;
+    font-family: "Rakkas", serif; font-size: 64px; color: var(--rose-50); line-height: 1;
+  }
+  .gcard .gtop { position: relative; display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .gcard .gavatar {
+    width: 38px; height: 38px; flex: 0 0 38px; border-radius: 999px;
+    background: linear-gradient(135deg, var(--rose-150), var(--rose-100));
+    color: var(--rose-700); display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 13px;
+  }
+  .gcard .gname { font-size: 14px; font-weight: 800; color: var(--rose-900); }
+  .gcard .gmsg { position: relative; font-size: 13px; line-height: 1.9; color: #5c4550; }
+  .gdots { display: flex; justify-content: center; gap: 6px; margin-top: 4px; }
+  .gdots button {
+    width: 7px; height: 7px; border-radius: 999px; background: var(--rose-150);
+    border: none; padding: 0; cursor: pointer; transition: all .25s ease;
+  }
+  .gdots button.active { background: var(--rose-600); width: 20px; }
+
+  /* --- footer --- */
+  .footer {
+    background-image:
+      linear-gradient(170deg, color-mix(in oklch, var(--rose-700) 82%, transparent), color-mix(in oklch, var(--rose-900) 90%, transparent)),
+      url('https://images.pexels.com/photos/3608751/pexels-photo-3608751.jpeg?auto=compress&cs=tinysrgb&w=1000');
+    background-size: cover;
+    background-position: center 25%;
+    color: #fbe9ed; text-align: center; padding: 48px 26px 40px;
+    position: relative; overflow: hidden;
+  }
+  .footer .fcontent { position: relative; z-index: 1; }
+  .footer .ayah2 { font-family: "Amiri Quran", serif; font-size: 20px; line-height: 1.8; color: var(--gold-300); margin-bottom: 14px; }
+  .footer .thanks { font-size: 13px; opacity: .85; margin-bottom: 14px; line-height: 1.9; }
+  .footer .fnames { font-family: "Aref Ruqaa", "Rakkas", serif; font-size: 28px; color: #fff; margin-bottom: 18px; }
+  .footer .fline { width: 60px; height: 1px; background: rgba(255,255,255,.3); margin: 0 auto 16px; }
+  .footer .copyright { font-size: 11px; opacity: .6; }
+  .fab {
+    position: absolute; z-index: 2; bottom: 22px;
+    width: 42px; height: 42px; border-radius: 999px;
+    background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.25);
+    display: flex; align-items: center; justify-content: center; color: #fff;
+    cursor: pointer;
+  }
+  .fab:hover { background: rgba(255,255,255,.2); }
+  .share-fab { left: 22px; }
+  .top-fab { right: 22px; }
+</style>
+</head>
+<body>
+
+<div id="invite" dir="rtl">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="topbar">
+      <button class="icon-btn" aria-label="القائمة">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <button class="music-pill" aria-label="تشغيل الموسيقى">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        تشغيل الموسيقى
+      </button>
+    </div>
+
+    <div class="hero-content">
+      <svg class="rings" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="14" r="6"/><circle cx="15" cy="14" r="6"/></svg>
+
+      <div class="arch-frame">
+        <svg class="arch" viewBox="0 0 300 330" fill="none" stroke="var(--gold-600)" stroke-width="1.4" preserveAspectRatio="none">
+          <path d="M14 330 V150 C14 55 82 6 150 6 C218 6 286 55 286 150 V330"/>
+          <path d="M30 330 V155 C30 70 90 24 150 24 C210 24 270 70 270 155 V330" stroke-width=".8" opacity=".55"/>
+          <path d="M136 -6 L150 -20 L164 -6 L150 8 Z" fill="var(--gold-600)" stroke="none"/>
+          <circle cx="14" cy="330" r="3.5" fill="var(--gold-600)" stroke="none"/>
+          <circle cx="286" cy="330" r="3.5" fill="var(--gold-600)" stroke="none"/>
+        </svg>
+        <h1 class="names">محمد<span class="amp">&amp;</span>سارة</h1>
+      </div>
+
+      <p class="tagline">ندعوكم لمشاركتنا أجمل أيامنا</p>
+      <div class="date-pill">20 ديسمبر 2026</div>
+    </div>
+
+    <div class="scroll-hint">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown reveal">
+    <p class="section-title" style="font-size:20px">العد التنازلي للزفاف</p>
+    <div class="divider"><span class="ln"></span><span class="dm"></span><span class="ln"></span></div>
+    <div class="countdown-grid" id="countdown">
+      <div class="cd-box"><div class="cd-num" data-unit="days">--</div><div class="cd-label">يوم</div></div>
+      <div class="cd-box"><div class="cd-num" data-unit="hours">--</div><div class="cd-label">ساعة</div></div>
+      <div class="cd-box"><div class="cd-num" data-unit="minutes">--</div><div class="cd-label">دقيقة</div></div>
+      <div class="cd-box"><div class="cd-num" data-unit="seconds">--</div><div class="cd-label">ثانية</div></div>
+    </div>
+  </section>
+
+  <!-- VERSE -->
+  <section class="verse reveal">
+    <p class="bism">بسم الله الرحمن الرحيم</p>
+    <p class="ayah">"ومن آياته أن خلق لكم من أنفسكم أزواجاً لتسكنوا إليها وجعل بينكم مودة ورحمة"</p>
+    <p class="verse-body">نحمد الله الذي جمعنا وأنتم على نعمته، ويسعدنا دعوتكم لحضور حفل زفافنا ومشاركتنا فرحتنا</p>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="details reveal">
+    <p class="section-title">تفاصيل الحفل</p>
+    <div class="divider"><span class="ln"></span><span class="dm"></span><span class="ln"></span></div>
+    <div class="details-row">
+      <div class="venue-art">
+        <img src="https://images.pexels.com/photos/1128782/pexels-photo-1128782.jpeg?auto=compress&cs=tinysrgb&w=600" alt="قاعة الروز" loading="lazy">
+      </div>
+      <div class="detail-cards">
+        <div class="dcard">
+          <div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
+          <div><div class="lbl">التاريخ</div><div class="val">الأحد 20 ديسمبر 2026</div></div>
+        </div>
+        <div class="dcard">
+          <div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <div><div class="lbl">الوقت</div><div class="val">الساعة 7:00 مساءً</div></div>
+        </div>
+        <div class="dcard">
+          <div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg></div>
+          <div><div class="lbl">المكان</div><div class="val">قاعة الروز – جدة</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="map reveal">
+    <p class="section-title">موقع الحفل</p>
+    <div class="divider"><span class="ln"></span><span class="dm"></span><span class="ln"></span></div>
+    <div class="map-box">
+      <iframe
+        src="https://www.google.com/maps?q=%D9%82%D8%A7%D8%B9%D8%A9+%D8%A7%D9%84%D8%B1%D9%88%D8%B2+%D8%AC%D8%AF%D8%A9&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen></iframe>
+      <div class="pin">
+        <span class="pin-pulse"></span>
+        <svg class="pin-svg" viewBox="0 0 46 60" aria-hidden="true">
+          <path d="M23 58C23 58 4 37 4 22.5a19 19 0 0 1 38 0C42 37 23 58 23 58z" fill="var(--rose-700)" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/>
+          <circle cx="23" cy="22.5" r="11" fill="#fff"/>
+          <path d="M23 28.5s-6-3.7-6-7.9a3.2 3.2 0 0 1 6-1.6 3.2 3.2 0 0 1 6 1.6c0 4.2-6 7.9-6 7.9z" fill="var(--rose-700)"/>
+        </svg>
+      </div>
+      <div class="pin-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--rose-700)" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.2"/></svg>
+        قاعة الروز – جدة
+      </div>
+    </div>
+    <div class="map-btns">
+      <a class="btn btn-outline" href="https://maps.google.com/?q=%D9%82%D8%A7%D8%B9%D8%A9+%D8%A7%D9%84%D8%B1%D9%88%D8%B2+%D8%AC%D8%AF%D8%A9" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+        فتح في خرائط جوجل
+      </a>
+      <button class="btn btn-primary" id="addToCalendar">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M12 14v4M10 16h4"/></svg>
+        إضافة للمواعيد
+      </button>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="rsvp reveal">
+    <p class="section-title">تأكيد الحضور</p>
+    <div class="divider"><span class="ln"></span><span class="dm"></span><span class="ln"></span></div>
+    <p class="rsvp-sub">نرجو تأكيد حضوركم ليكتمل فرحنا بوجودكم</p>
+
+    <form id="rsvpForm">
+      <label class="field">
+        <span class="icon-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg></span>
+        <input type="text" placeholder="الاسم الكامل" required>
+      </label>
+      <label class="field">
+        <span class="icon-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5c0 8.8 6.2 15 15 15l3-4-6-3-2 2c-2.5-1.3-4.7-3.5-6-6l2-2-3-6z"/></svg></span>
+        <input type="tel" placeholder="رقم الجوال" required>
+      </label>
+      <label class="field">
+        <span class="icon-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 19c0-3.5 3-5.5 6.5-5.5S15.5 15.5 15.5 19"/><circle cx="17" cy="9" r="2.6"/><path d="M15 13.4c2.8.3 4.6 2 4.6 5.6"/></svg></span>
+        <input type="number" min="0" placeholder="عدد المرافقين">
+      </label>
+
+      <p class="attend-q">هل ستحضر الحفل؟</p>
+      <div class="attend-row" id="attendRow">
+        <button type="button" class="btn btn-outline" data-attend="no">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          لا، لن أتمكن
+        </button>
+        <button type="button" class="btn btn-primary selected" data-attend="yes">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg>
+          نعم، سأحضر
+        </button>
+      </div>
+
+      <button type="submit" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        إرسال التأكيد
+      </button>
+    </form>
+  </section>
+
+  <!-- BLESSING -->
+  <section class="blessing reveal">
+    <p class="section-title">رسالة مباركة</p>
+    <div class="divider"><span class="ln"></span><span class="dm"></span><span class="ln"></span></div>
+    <p class="blessing-sub">اكتب لنا تهنئتك وكلماتك الجميلة، سيتم عرضها هنا</p>
+
+    <form id="blessingForm">
+      <label class="field textarea">
+        <span class="icon-circle" style="margin-top:2px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.5-4.5L16 5l3 3-10.5 10.5z"/><path d="M13.5 6.5l3 3"/></svg>
+        </span>
+        <textarea placeholder="اكتب رسالتك هنا..." required></textarea>
+      </label>
+      <label class="field">
+        <span class="icon-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg></span>
+        <input type="text" placeholder="اسمك" required>
+      </label>
+
+      <button type="submit" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        إرسال الرسالة
+      </button>
+    </form>
+  </section>
+
+  <!-- GUESTBOOK -->
+  <section class="guestbook reveal">
+    <p class="section-title">رسائل الضيوف</p>
+    <div class="divider"><span class="ln"></span><span class="dm"></span><span class="ln"></span></div>
+    <p class="gb-hint">اسحبوا لعرض جميع رسائل الضيوف ‹ ›</p>
+
+    <div class="gtrack" id="gTrack">
+      <div class="gcard">
+        <div class="gtop">
+          <div class="gavatar">أع</div>
+          <div class="gname">أحمد العتيبي</div>
+        </div>
+        <div class="gmsg">ألف مبروك يا غاليين، الله ينعم لكم على خير ويجمعكم بالحب والسعادة</div>
+      </div>
+      <div class="gcard">
+        <div class="gtop">
+          <div class="gavatar">نم</div>
+          <div class="gname">نورة محمد</div>
+        </div>
+        <div class="gmsg">ما شاء الله تبارك الله، الله يسعدكم ويبارك لكم</div>
+      </div>
+      <div class="gcard">
+        <div class="gtop">
+          <div class="gavatar">سه</div>
+          <div class="gname">سلمان و هند</div>
+        </div>
+        <div class="gmsg">مبروك مليون مبروك، وعقبال الذرية الصالحة</div>
+      </div>
+      <div class="gcard">
+        <div class="gtop">
+          <div class="gavatar">سف</div>
+          <div class="gname">سعاد وفيصل</div>
+        </div>
+        <div class="gmsg">بيت عامر بالحب إن شاء الله، ألف مبروك للعروسين الغاليين</div>
+      </div>
+    </div>
+    <div class="gdots" id="gDots"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer reveal">
+    <div class="fcontent">
+      <p class="ayah2">وخلقناكم أزواجاً</p>
+      <p class="thanks">شكراً لمشاركتنا فرحتنا</p>
+      <p class="fnames">محمد &amp; سارة</p>
+      <div class="fline"></div>
+      <p class="copyright">جميع الحقوق محفوظة © 2026</p>
+    </div>
+    <button class="fab share-fab" id="shareBtn" aria-label="مشاركة الدعوة">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 10.6l6.8-3.2M8.6 13.4l6.8 3.2"/></svg>
+    </button>
+    <button class="fab top-fab" id="toTop" aria-label="العودة للأعلى">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+  </footer>
+
+</div>
+
+<script>
+  // ظهور الأقسام تدريجياً عند التمرير
+  var revealEls = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+    revealEls.forEach(function (el) { io.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add("in-view"); });
+  }
+
+  // زر تشغيل الموسيقى (تبديل مرئي فقط، بدون ملف صوت)
+  var musicBtn = document.querySelector(".music-pill");
+  var musicLabel = musicBtn.lastChild;
+  musicBtn.addEventListener("click", function () {
+    var playing = musicBtn.classList.toggle("playing");
+    musicLabel.textContent = playing ? " إيقاف الموسيقى" : " تشغيل الموسيقى";
+    musicBtn.setAttribute("aria-label", playing ? "إيقاف الموسيقى" : "تشغيل الموسيقى");
+  });
+
+  // العد التنازلي الحقيقي لتاريخ الحفل
+  var weddingDate = new Date("2026-12-20T19:00:00");
+  var countdownEl = document.getElementById("countdown");
+  var cdUnits = {
+    days: countdownEl.querySelector('[data-unit="days"]'),
+    hours: countdownEl.querySelector('[data-unit="hours"]'),
+    minutes: countdownEl.querySelector('[data-unit="minutes"]'),
+    seconds: countdownEl.querySelector('[data-unit="seconds"]')
+  };
+  function setUnit(el, text) {
+    if (el.textContent === text) return;
+    el.textContent = text;
+    el.classList.remove("bump");
+    void el.offsetWidth; // إعادة تشغيل الحركة
+    el.classList.add("bump");
+  }
+  function tick() {
+    var diff = weddingDate - new Date();
+    if (diff <= 0) {
+      if (!countdownEl.classList.contains("done")) {
+        countdownEl.classList.add("done");
+        countdownEl.innerHTML = '<p class="cd-finished">اليوم هو يوم الزفاف! 💍</p>';
+      }
+      clearInterval(countdownTimer);
+      return;
+    }
+    var days = Math.floor(diff / 86400000);
+    var hours = Math.floor((diff % 86400000) / 3600000);
+    var minutes = Math.floor((diff % 3600000) / 60000);
+    var seconds = Math.floor((diff % 60000) / 1000);
+    setUnit(cdUnits.days, String(days));
+    setUnit(cdUnits.hours, String(hours).padStart(2, "0"));
+    setUnit(cdUnits.minutes, String(minutes).padStart(2, "0"));
+    setUnit(cdUnits.seconds, String(seconds).padStart(2, "0"));
+  }
+  tick();
+  var countdownTimer = setInterval(tick, 1000);
+
+  // زر الحضور
+  var attendRow = document.getElementById("attendRow");
+  attendRow.addEventListener("click", function (e) {
+    var btn = e.target.closest("button");
+    if (!btn) return;
+    attendRow.querySelectorAll("button").forEach(function (b) {
+      b.classList.remove("btn-primary", "selected");
+      b.classList.add("btn-outline");
+    });
+    btn.classList.remove("btn-outline");
+    btn.classList.add("btn-primary", "selected");
+  });
+
+  // نماذج تأكيد الحضور والمباركة (عرض توضيحي بدون خادم)
+  document.getElementById("rsvpForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("شكراً لتأكيد حضوركم! تم استلام ردكم بنجاح.");
+    e.target.reset();
+  });
+  document.getElementById("blessingForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("شكراً على رسالتكم الجميلة!");
+    e.target.reset();
+  });
+
+  document.getElementById("toTop").addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+  document.getElementById("shareBtn").addEventListener("click", function () {
+    var shareData = { title: document.title, text: "دعوة زفاف محمد و سارة", url: location.href };
+    if (navigator.share) {
+      navigator.share(shareData).catch(function () {});
+    } else if (navigator.clipboard) {
+      navigator.clipboard.writeText(location.href).then(function () {
+        alert("تم نسخ رابط الدعوة!");
+      });
+    }
+  });
+  (function () {
+    var track = document.getElementById("gTrack");
+    var dotsWrap = document.getElementById("gDots");
+    var cards = track.querySelectorAll(".gcard");
+    var dots = [];
+
+    cards.forEach(function (card, i) {
+      var dot = document.createElement("button");
+      dot.type = "button";
+      dot.setAttribute("aria-label", "الرسالة " + (i + 1));
+      if (i === 0) dot.classList.add("active");
+      dot.addEventListener("click", function () {
+        card.scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" });
+      });
+      dotsWrap.appendChild(dot);
+      dots.push(dot);
+    });
+
+    var ticking = false;
+    track.addEventListener("scroll", function () {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () {
+        var trackCenter = track.scrollLeft + track.clientWidth / 2;
+        var closest = 0;
+        var minDist = Infinity;
+        cards.forEach(function (card, i) {
+          var dist = Math.abs((card.offsetLeft + card.offsetWidth / 2) - trackCenter);
+          if (dist < minDist) { minDist = dist; closest = i; }
+        });
+        dots.forEach(function (d, i) { d.classList.toggle("active", i === closest); });
+        ticking = false;
+      });
+    });
+  })();
+  document.getElementById("addToCalendar").addEventListener("click", function () {
+    var ics = [
+      "BEGIN:VCALENDAR","VERSION:2.0","BEGIN:VEVENT",
+      "SUMMARY:حفل زفاف محمد و سارة",
+      "DTSTART:20261220T190000",
+      "DTEND:20261220T230000",
+      "LOCATION:قاعة الروز – جدة",
+      "END:VEVENT","END:VCALENDAR"
+    ].join("\r\n");
+    var blob = new Blob([ics], { type: "text/calendar" });
+    var link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "wedding-invite.ics";
+    link.click();
+  });
+</script>
+</body>
+</html>
